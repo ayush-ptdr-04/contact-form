@@ -1,0 +1,120 @@
+body {
+    background-image: url(bg-image.svg);
+    background-size: cover;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #F8FAFC;
+}
+
+.becv {
+    margin-left: 5rem;
+    margin-top: 2rem;
+}
+
+h1 {
+    color: #F8FAFC;
+    display: flex;
+    font-size: 3.5rem;
+    font-weight: 500;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#para {
+    color: #F8FAFC;
+    display: flex;
+    font-size: 1.8rem;
+    justify-content: center;
+    align-items: center;
+    line-height: 3rem;
+    text-align: center;
+}
+
+.page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-bottom: 15rem;
+}
+
+.contact {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+    background-color: rgba(248, 250, 252, 0.2);
+    width: 750px;
+    padding: 2rem;
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+
+@media (max-width:640px){
+   .contact {
+    display: flex;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(2, 1fr);
+    width: 600px;
+   }
+   body {
+    background-repeat: no-repeat;
+   }
+
+   .form-group{
+    width: 100%;
+   }
+   h1{
+    font-size: 2.4rem;
+   }
+   #para{
+    font-size: 1.4rem;
+    margin-bottom: 5rem;
+   }
+   input{
+    width: 100%;
+   }
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+.form-group.full-width {
+    grid-column: span 2;
+}
+
+label {
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+    color: #F8FAFC;
+}
+
+input, select, textarea {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    padding: 0.5rem;
+    border-radius: 10px;
+    border: none;
+    font-size: 1rem;
+}
+
+textarea {
+    resize: none;
+}
+
+button {
+    height: 50px;
+    color: #4036A9;
+    padding: 0.5rem 2rem;
+    border: none;
+    border-radius: 10px;
+    background-color: #F8FAFC;
+    font-size: 1rem;
+    cursor: pointer;
+}
